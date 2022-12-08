@@ -4,6 +4,9 @@
 	box-sizing:border-box;
 	
 }
+::before, ::after{
+	box-sizing:border-box;
+}
 
 
 html, body, div, span, applet, object, iframe,
@@ -55,7 +58,7 @@ table {
 }
 p{
 	line-height:22px;
-	font-weight:300;
+	font-weight:400;
 	font-size:14px;
 	
 }
