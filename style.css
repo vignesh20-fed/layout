@@ -281,7 +281,7 @@
 	border-radius:10px;
 	padding:40px 20px;
 	text-align:center;
-	box-shadow:0 5px 50px #9e9e9e75;
+	box-shadow:0 5px 20px ;
 	}
 .chooseitem i{
 	color:#00bcd4;
@@ -476,7 +476,7 @@ text-align:center;
    .serviceitem:hover  .service-icons{
 	   color:var(--primary-color);
    }
-   .serviceitem:hover h3{
+   .serviceitem:hover h3 a{
 	   color:var(--primary-color);
    }
 /*----------protofile--------*/
