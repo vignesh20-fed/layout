@@ -537,24 +537,20 @@ text-align:center;
 	padding-right:50px;
 	font-size:15px;
 	}
-.protofileitem a{
+.protofileitem   a{
 	text-decoration:none;
 	line-height:50px;
 	color:#000;
 }
-.protofileitem i{
+.protofileitem .icon i{
 	margin-left:20px;
-}
-.protofileitem .para{
-	text-align:justify;
-	font-size:15px;
 }
 
 .protofileitem:hover{
     background-color:var(--primary-color);
-	transition:all 0.5s ease;
+	transition:all 1s ease;
 }
-.protofileitem a:hover{
+.protofileitem .icon a:hover{
 	text-decoration:underline;
 }
 /*------------team section---------*/
