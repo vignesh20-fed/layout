@@ -95,7 +95,7 @@
 	text-decoration:none;
 	color:white;
 	background-color:#00bcd4;
-	padding:10px 25px;
+	padding:12px 25px;
 	text-align:center;
 	}	
 .text-right{
@@ -184,7 +184,7 @@
 	background-size:cover;
 	background-position:center;
 	background-attachment:fixed;
-	margin-bottom:-100px;
+	margin-bottom:-140px;
 }
 .bannercontent{
 		width:60%;
@@ -197,31 +197,29 @@
 }
 .bannercontent p{
 	color:#fff;
-	font-size:10px;
+	font-size:20px;
 	margin-bottom:40px;
 }
 .bnr-btn{
 	position:relative;
 	display:inline-block;
-	padding:6px 0 6px 25px;
+	padding:6px 0 6px 20px;
 
 	}
 .bnr-btn a.btn{
      border-radius:25px;
-	 background-color:var(--primary);
-	 border:1px solid black;
 	 background-color:#333333; 
 	 transition:1s;
 } 	
 .bnr-btn > i{
 	position:absolute;
-	top:4px;
+	top:0px;
 	right:118px;
 	background-color:#00bcd4; 
-	height:40px;
-	width:40px;
+	height:50px;
+	width:50px;
 	text-align:center;
-	line-height:40px;
+	line-height:50px;
 	color:var(--white);
 	border-radius:50%;
 	box-shadow:1px 0 5px  black;
@@ -248,8 +246,9 @@
 	font-size:32px;
 	text-align:left;
 	font-family: 'Raleway', sans-serif;
-	line-height:38px;
+	line-height:36px;
 	font-weight:800;
+	margin-bottom:30px;
 }
 .why-choose p{
 	margin-bottom:30px;
@@ -281,7 +280,7 @@
 	border-radius:10px;
 	padding:40px 20px;
 	text-align:center;
-	box-shadow:0 1px 5px ;
+	box-shadow:0 2px 5px #ccc;
 	}
 .chooseitem i{
 	color:#00bcd4;
@@ -326,7 +325,7 @@
 }
 
 .abt-content{
-	padding:20px 0 0 30px;
+	padding:20px 0 40px 30px;
 }
 .abt-content h5{
 	color:#999;
@@ -489,9 +488,9 @@ text-align:center;
 	background-position:center;
 	background-size:cover;
     border-radius:1%;
-    margin-bottom: 60px;
-    padding: 20px;
+    padding:20px;
     padding-top: 175px;
+	
 }
 .protofile2{
 	background-image:url("image/values-2.jpg");
@@ -553,8 +552,8 @@ text-align:center;
 .protofileitem .icon a:hover{
 	text-decoration:underline;
 }
-/*------------team section---------*/
-.teamsect{
+/*------------termianl section---------*/
+.terminalsect{
 	background-image:linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url("image/testimonials-bg.jpg");
 	background-position:center;
 	background-size:cover;
@@ -569,18 +568,18 @@ text-align:center;
 .img {
 	line-height:40px;
 }
-.teamitem{
+.terminalitem{
 	color:white;
-	text-align:center;	
+	text-align:center;
 }
-.teamitem h2{
+.terminalitem h2{
 	line-height:10px;
 }
-.teamitem h4{
+.terminalitem h4{
 	line-height:40px;
 	color:#ddd;
 }
-.teamitem p{
+.terminalitem p{
 	line-height:30px;
 	font-size:18px;
 	font-style:italic;
@@ -588,10 +587,10 @@ text-align:center;
 	padding-left:50px;
 	padding-right:50px;
 }
-.teamitem i{
+.terminalitem i{
 	color:rgba(255, 255, 255, 0.5);
 }
-.teamitem .icons{
+.terminalitem .icons{
 	line-height:70px;
 }
 
@@ -613,28 +612,59 @@ text-align:center;
 }	
 /*---------pricing----------*/
 .pricingsect{
-	background-color:#39312f;
-	padding:80px 0;
+	padding:30px 0;
 }
 .pricingtitle{
-	background-color:#ff5821;
-	height:90px;
+	text-align:center;
+	line-height:80px;
+}
+.pricingtitle h2{
+	font-size:32px;
+	font-weight:500;
+}
+.pricingtitle p{
+	font-size:17px;
+}
+.pricingtitle .content span{
+    cursor:pointer;
+    padding: 10px 20px 12px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border-radius: 50px;
+}
+.pricingtitle .content span:hover{
+	background-color:var(--primary-color);
+}
+.pricingtitle .content a{
+	text-decoration:none;
+	color:#000;
+}
+.pricingimg img{
+	width:100%;
+	padding:10px;
 }
 .pricingitem{
-	background-color:#ff5821;
+	background-color:;
 	height:250px;
 	margin-top:30px;
 }
-/*---------blog------------*/
-.blogsect{
-	background-color:#ff5821;
+/*---------team------------*/
+.teamsect{
 	padding:80px 0;
 }
-.blogtitle{
-	background-color:#39312f;
-	height:90px;
+.teamtitle{
+	text-align:center;
+	line-height:50px;
 	}
-.blogitem{
+.teamtitle h2{
+	font-size: 32px;
+    font-weight: 500;
+}	
+.teamimg img{
+	width:100%;
+}
+.teamitem{
 	background-color:#39312f;
 	height:200px;
 	margin-top:30px;	
@@ -642,7 +672,7 @@ text-align:center;
 /*----------buy-----------*/
 .buysection{
 	background-color:#ff5821;
-	padding:60px 0;
+	padding:80px 0;
 }
 .buytitle{
 	background-color:#39312f;
