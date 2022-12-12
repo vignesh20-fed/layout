@@ -521,8 +521,8 @@ text-align:center;
 }
 
 .protofileitem{
-    background-color: #fff;
-	filter:opacity(90%);
+    background-color:#ffffffbd;
+	
 	border-radius:1%;
 }
 .protofileitem h3{
@@ -544,13 +544,64 @@ text-align:center;
 .protofileitem .icon i{
 	margin-left:20px;
 }
+.protofile:hover .protofileitem
+{
+	background-color:var(--primary-color);
+	
 
-.protofileitem:hover{
-    background-color:var(--primary-color);
-	transition:all 1s ease;
 }
-.protofileitem .icon a:hover{
+.protofile:hover .protofileitem p
+{
+color:white;
+}
+.protofile:hover .protofileitem a
+{
+color:white;
+}
+.protofile2:hover .protofileitem
+{
+	background-color:var(--primary-color);
+	
+
+}
+.protofile2:hover .protofileitem p
+{
+color:white;
+}
+.protofile2:hover .protofileitem a
+{
+color:white;
+}
+ .protofileitem .icon a:hover{
 	text-decoration:underline;
+}
+.protofile3:hover .protofileitem
+{
+	background-color:var(--primary-color);
+	
+
+}
+.protofile3:hover .protofileitem p
+{
+color:white;
+}
+.protofile3:hover .protofileitem a
+{
+color:white;
+}
+.protofile4:hover .protofileitem
+{
+	background-color:var(--primary-color);
+	
+
+}
+.protofile4:hover .protofileitem p
+{
+color:white;
+}
+.protofile4:hover .protofileitem a
+{
+color:white;
 }
 /*------------termianl section---------*/
 .terminalsect{
@@ -563,7 +614,6 @@ text-align:center;
 	width:100px;
 	border-radius:50%;
 	border:6px solid rgba(255, 255, 255, 0.15);
-	
 }
 .img {
 	line-height:40px;
@@ -633,12 +683,21 @@ text-align:center;
     transition: all 0.3s ease;
     border-radius: 50px;
 }
-.pricingtitle .content span:hover{
-	background-color:var(--primary-color);
-}
+
 .pricingtitle .content a{
 	text-decoration:none;
 	color:#000;
+}
+.pricingtitle .content span a:hover{
+	background-color:var(--primary-color);
+	border-radius:50%;
+	padding:10px;
+}
+	
+.pricingtitle .content span a.active{
+	background-color:var(--primary-color);
+	border-radius:50%;
+	padding:10px;
 }
 .pricingimg img{
 	width:100%;
