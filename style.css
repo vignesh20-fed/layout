@@ -699,14 +699,42 @@ color:white;
 	border-radius:50%;
 	padding:10px;
 }
+.pricingitem{
+	
+	height:250px;
+	margin-top:30px;
+	overflow:hidden;
+}
 .pricingimg img{
 	width:100%;
 	padding:10px;
 }
-.pricingitem{
-	background-color:;
-	height:250px;
-	margin-top:30px;
+.pricingimg{
+	position:relative;
+}
+.pricingcontent{
+    opacity:0;
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:30px;
+	width:80%;
+    margin-left:35px;
+	margin-bottom:20px;
+	line-height:30px;
+	padding:20px;
+}
+.pricingimg:hover .pricingcontent 
+{
+	opacity:1;
+	position:absolute;
+	background-color:#ffffffbd;
+}
+.pricingitem .ic i{
+	position:absolute;
+	text-align:right;
+	color:black
+	
 }
 /*---------team------------*/
 .teamsect{
@@ -723,10 +751,57 @@ color:white;
 .teamimg img{
 	width:100%;
 }
+
 .teamitem{
 	background-color:#39312f;
-	height:200px;
-	margin-top:30px;	
+	margin-top:30px; 	
+}
+.teamimg{
+	position:relative;
+}
+.instag{
+	opacity:0;
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	width:100%;
+	background-color:rgba(0,0,255,0.13);
+	padding:5px;
+}
+.teamimg:hover .instag{
+	opacity:1;
+	position:absolute;
+	background-color:#ffffffbd;
+	padding:2px;
+
+}
+
+.instag{
+	text-align:center;
+    background-color:#ffffffbd;
+	
+}
+.instag i{
+	font-size:20px;
+	padding:10px;
+}
+.instag i:hover{
+	color:var(--primary-color);
+}
+.instag a{
+	text-decoration:none;
+	color:black;
+}
+.social{
+   background-color:white;
+    text-align:center;
+    box-shadow:0 0 10px  #ccc;
+    padding:20px;	
+	 line-height:30px;
+}	
+.social h3{
+	font-family: 'Raleway', sans-serif;
 }
 /*----------buy-----------*/
 .buysection{
