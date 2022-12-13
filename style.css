@@ -6,7 +6,7 @@
 :root{
 	--primary-color:#00bcd4;
 	--secondary-color:#333333;
-	--bg-color:#f8feff;
+	--bg-color:#edefef;
 	--white:#fff;
 	
 }
@@ -667,6 +667,7 @@ color:white;
 .pricingtitle{
 	text-align:center;
 	line-height:80px;
+	
 }
 .pricingtitle h2{
 	font-size:32px;
@@ -680,8 +681,7 @@ color:white;
     padding: 10px 20px 12px 20px;
     font-size: 14px;
     font-weight: 600;
-    transition: all 0.3s ease;
-    border-radius: 50px;
+    border-radius: 50%;
 }
 
 .pricingtitle .content a{
@@ -689,14 +689,14 @@ color:white;
 	color:#000;
 }
 .pricingtitle .content span a:hover{
-	background-color:var(--primary-color);
-	border-radius:50%;
+	background-color:#00bcd43d;
+	border-radius:25px;
 	padding:10px;
 }
 	
 .pricingtitle .content span a.active{
-	background-color:var(--primary-color);
-	border-radius:50%;
+	background-color:#00bcd43d;
+	border-radius:25px;
 	padding:10px;
 }
 .pricingitem{
@@ -731,8 +731,8 @@ color:white;
 	color:black;
 }
 .pricingicons i{
-	font-size:25px;
-	font-weight:100;
+	font-size:20px;
+	font-weight:200;
 }
 .pricingicons i:hover{
 	color:var(--primary-color);
@@ -748,22 +748,19 @@ color:white;
 {
 	opacity:1;
 	position:absolute;
-	background-color:#ffffffbd;
-	transition:1s;	
+	background-color:#ffffffbd;	
 	
 }
 .pricingimg:hover .pricingicons{
 	opacity:1;
 	position:absolute;
-	transition:1s;	
-	
-
 }
 
 
 
 /*---------team------------*/
 .teamsect{
+	background-color:#edefef;
 	padding:80px 0;
 }
 .teamtitle{
@@ -811,7 +808,7 @@ color:white;
 	background-color:rgba(0,0,255,0.13);
 	padding:5px;
 }
-.teamimg:hover .instag{
+.teamitem:hover .instag{
 	opacity:1;
 	position:absolute;
 	background-color:#ffffffbd;
@@ -830,10 +827,11 @@ color:white;
 .social h3{
 	font-family: 'Raleway', sans-serif;
 }
+
 /*----------buy-----------*/
 .buysection{
 	
-	padding:60px 0;
+	padding:30px 0;
 }
 .buytitle{
 	line-height:50px;
@@ -841,31 +839,63 @@ color:white;
 .buyitem{
 	text-align:center;
 	line-height:50px;
-	margin-top:30px;
+	margin-top:70px;
+	box-shadow:0 0 5px #ccc;
+	position:relative;
+	overflow:hidden;
+}
+.buyitem h4{
+	background-color:white;
 	box-shadow:0 0 5px #ccc;
 }
-.buyitem h3{
-	background-color:white;
-	box-shadow:0 0 2px #ccc;
+.buyitem  h3{
+	font-size:40px;
+}
+.buyitem  h3 sup{
+	font-size:10px;
+    top:-15px;
+}
+.buyitem  h3 span{
+	color:#bababa;
+    font-size: 16px;
+    font-weight: 300;
 }
 .buyitem sup{
-	font-size:40px;
+	font-size:14px;
+	vertical-align:top;
 }
 .buyitem p{
 	line-height:40px;
 }
 .buybutton {
 	margin:20px 70px;
-	background-color:var(--primary-color);
+	background-color:var(--primary-color);	
+	cursor:pointer;
+	border-radius:6px;
 }
 .buybutton a{
 	text-decoration:none;
 	color:black;
 }
+.buyitem .bus{
+	background-color:var(--primary-color);
+	border-radius:5px;
+
+}
+.buyitem .buyadvance{
+	width: 200px;
+    position: absolute;
+    top: 8px;
+    transform: rotate(45deg);
+    z-index: 1;
+    font-size: 14px;
+    background-color:var(--primary-color);
+    color: #fff;
+}
 
 /*--------------subscribe---------*/
 .faqsection{
-	
+	background-color:#edefef;
 	padding:50px 0px;
 }
 .faqcontent{
@@ -914,53 +944,73 @@ color:white;
 }
 .contacttitle{
 	line-height:50px;
-
+	margin-bottom:40px;
+}
+.contactfull{
+	margin:0 150px;
 }
 .contactitem{
 	background-color:white;
-	box-shadow:0 0 5px #ccc;
 	margin-top:10px;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 0 15px #ccc;
+    margin-bottom: 25px;
 	}
 .contacticon{
 	color: #313030;
-    box-shadow: 0 0 30px rgb(214 215 216 / 60%);
-    padding: 20px;
+    box-shadow: 0 0 30px white;
 }
-.contacticons i{
-	font-size: 30px;
-    color:var(--primary-color);
-    border-radius:50%;
-    padding:15px;
-    border: 2px solid #ffded4;
-}
+
 .contacticon i{
-	font-size: 30px;
-    color:var(--primary-color);
-    border-radius:50%;
-    padding:15px;
-    border: 2px solid #ffded4;
+	display: inline-block;
+    font-size: 30px;
+    color: #03a9f4;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px dotted #03a9f4;
 }
-.contactitem h3{
-	padding-left:50px;
+.contactcont h3{
+	padding-bottom:13px;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
 }
-.contactitem p{
-	padding-left:50px;
+.contactcont p{
+	font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.8;
 }
-.formsection{
-	background-color:#ff5821;
-	margin-top:50px 0;
-}
+
 .formcontent{
-	background-color:#39312f;
-	margin-top:20px;
-	height:500px;
+    box-shadow: 0 0 30px #ccc;
+    padding:20px;
+	margin-top:10px;
 	width:100%;
-
+	line-height:100px;
 }
-
+.formgroup input{
+    width:100%;
+    padding:10px 8px;
+}	
+.formgroup textarea{
+	 width:100%;
+	 padding:10px 10px;
+	 border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+}
+.formgroup button{
+    background-color:var(--primary-color);
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+}
 /*---------------author-----------*/
 .footsect{
 	padding:80px 0;
+	background-color:#edefef;
 }
 .fontitem{
     font-size:20px;
@@ -985,25 +1035,66 @@ color:white;
 	line-height:30px;
 	font-size:15px;	
 }
-.fontnew form input{
-	margin-top: 30px;
-    background: #fff;
-    padding: 6px 10px;
+.fontnew h3{
+	font-size: 16px;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 15px;
+}
+.fontnew p{
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #656262;
+    font-family: "Open Sans", sans-serif;
+    padding-bottom: 30px;
+}
+.form {
+	 border-radius: 25px;
+    box-shadow: 0 0 5px #c5c5c5;
     position: relative;
-    border-radius: 50px;
-    text-align: left;
-    border: 1px solid #ffe2d9;
+}
+.form input{
+	padding: 14px 15px;
+    width: 70%;
+    font-size: 16px;
+	border:0px solid #03a9f4;
+    border-radius: 25px;
+}
+.form button{
+	position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px 25px;
+    line-height: 1.4;
+    border: none;
+    background-color:#03a9f4;
+    color: #fff;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 25px;
 }
 /*-----------------author end--------------*/
 .authorsection{
-	background-color:#ff5821;
+	background-color:#edefef;
+		padding:20px 0;
 }
-.authorcontent{
-	background-color:#39312f;
-	height:90px;
+.authorcontent .authorlink a{
+	text-decoration:none;
+	color:var(--primary-color);
 }
-.fontcontent{
-	background-color:#39312f;
-	height:90px;
+.fontcontent .authoricon a{
+	font-size: 20px;
+    background:var(--primary-color);
+    color: #fff;
+    border-radius:50%;
+	padding: 10px 15px;
+	text-align: center;
+	margin-right:2px;
 }
-
+.fontcontent .authoricon i{
+	color:black;
+}
+.fontcontent:hover .authoricon {
+	background-color:#00bcd414;
+}
