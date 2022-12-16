@@ -916,10 +916,14 @@ color:white;
 .faqcontentitem a:hover{
 	color:var(--primary-color);
 }
+.faqcontentitem a.active{
+	color:var(--primary-color);
+}
 .faqcontentitem  i{
-	color:#00bcd44f;
+	color:var(--primary-color);
 	font-size:20px;
 	margin-right:15px;
+	font-weight:500;
 } 
 .faqicons{
 	position:absolute;
