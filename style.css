@@ -6,7 +6,7 @@
 :root{
 	--primary-color:#00bcd4;
 	--secondary-color:#333333;
-	--bg-color:#d8ebeb;
+	--bg-color:#eafbfb;
 	--white:#fff;
 	
 }
@@ -110,8 +110,19 @@
 .text-justify{
 	text-align:justify !important;
 }	
-				
-				
+.commontitle{
+	text-align:center;
+	font-family: 'Raleway', sans-serif;
+	line-height:65px;
+	margin-bottom:20px;
+}
+.commontitle  h2{
+	color:#635551;
+	font-size:35px;
+}
+.commontitle  p{
+	font-size:16px;
+}				
 	
 /*=========== header style ========*/	
 .headertop{
@@ -413,17 +424,7 @@
 	background-color:var(--bg-color);
 	padding:80px 0;
 }
-.sectiontitle{
-text-align:center;
-}
-.sectiontitle  h2{
-	color:#000;
-	font-size:30px;
-	margin-bottom:20px;
-}
-.sectiontitle  p{
-	margin-bottom:40px;
-}
+
 .serviceitem{
 	background-color:#fff;
 	margin-top:60px;
@@ -594,23 +595,25 @@ color:white;
 	padding:80px 0;
 }
 .img img{
-	width:100px;
+	width:90px;
 	border-radius:50%;
 	border:6px solid rgba(255, 255, 255, 0.15);
 }
-.img {
-	line-height:40px;
+.img{
+	line-height:50px;
 }
 .terminalitem{
-	color:white;
+    font-family: 'Raleway', sans-serif;
 	text-align:center;
 }
 .terminalitem h2{
 	line-height:10px;
+	color:white;
 }
 .terminalitem h4{
 	line-height:40px;
 	color:#ddd;
+	font-weight:500px;
 }
 .terminalitem p{
 	line-height:30px;
@@ -626,7 +629,6 @@ color:white;
 .terminalitem .icons{
 	line-height:70px;
 }
-
 .icons span{
 	display:inline-block;
 	width:12px;
@@ -645,32 +647,19 @@ color:white;
 }	
 /*---------pricing----------*/
 .pricingsect{
-	padding:30px 0;
-}
-.pricingtitle{
-	text-align:center;
-	line-height:80px;
-	margin-bottom:40px;
-	
-}
-.pricingtitle h2{
-	font-size:32px;
-	font-weight:500;
-}
-.pricingtitle p{
-	font-size:17px;
+	padding:60px 0;
 }
 .content {
        display:flex;
 	   justify-content:center;
-	   margin-bottom:40px;
+	   margin-bottom:30px;
 }
 .content .pricingbut{
 	text-decoration:none;
 	color:#000;
 	padding:8px 15px;
 	text-transform:uppercase;
-	font-size:18px;
+	font-size:15px;
 	border-radius:25px;
 }
 .content .pricingbut:hover{
@@ -746,37 +735,28 @@ color:white;
 	background-color:var(--bg-color);
 	padding:80px 0;
 }
-.teamtitle{
-	text-align:center;
-	line-height:80px;
-	margin-bottom:30px;
-	}
-.teamtitle h2{
-	font-size: 32px;
-    font-weight: 500;
-}
-.teamtitle p{
-	font-size:16px;
-}
 .teamitem{
-	position:relative;
 	margin-top:30px; 
-    border-radius:5px;	
+    border-radius:6px;
+    overflow:hidden;	
 }
 .teamimg img{
 	width:100%;
 	height:auto;
 }
+.teamimg{
+	position:relative;
+}
 .instag{
 	opacity:0;
 	position:absolute;
 	left:0;
-	right:0;
-	bottom:90px;
+	bottom:0;
 	width:100%;
 	background-color:rgba(0,0,255,0.13);
 	text-align:center;
-	padding:5px;
+	padding-top:10px;
+	padding-bottom:10px;
 	visibility:hidden;
 }
 .instag i{
@@ -804,24 +784,25 @@ color:white;
     text-align:center;
     box-shadow:0 0 10px  #ccc;
     padding:20px;	
-    line-height:30px;
+    line-height:20px;
 }	
 .social h3{
 	font-family: 'Raleway', sans-serif;
 }
+.social p{
+    font-size: 13px;
+    font-weight: 400;
+    color: #989595;
+}
+}
 
 /*----------buy-----------*/
 .buysection{
-	
-	padding:30px 0;
+	padding:80px 0;
 }
-.buytitle{
-	line-height:50px;
-	}
 .buyitem{
 	text-align:center;
-	line-height:60px;
-	margin-top:70px;
+	line-height:50px;
 	box-shadow:0 0 5px #ccc;
 	border-radius:10px;
 	position:relative;
@@ -830,6 +811,7 @@ color:white;
 .buyitem h4{
 	background-color:#fff;
 	box-shadow:0 0 5px #ccc;
+	font-family: 'Raleway', sans-serif;
 }
 .buyitem  h3{
 	font-size:40px;
@@ -841,38 +823,44 @@ color:white;
 	color:#bababa;
     font-size: 16px;
     font-weight: 500;
+	
 }
 .buyitem h3 sup{
 	font-size:20px;
 	vertical-align:20px;
 	color:var(--primary-color);
+	font-weight:600;
 }
 .buyitem p{
 	line-height:40px;
 }
 .buybutton {
+	margin-top:15px;
 	background-color:white;	
 	box-shadow:0 0 5px #ccc;
 	cursor:pointer;
 	border-radius:6px;
 	transition:1s;
+	padding:10px;
 }
 .buybutton a{	
 	text-decoration:none;
-	color:black;
+	color:#fff;
 	background-color:var(--primary-color);
-	padding:5px 20px;
+	padding:10px 30px;
 	border-radius:5px;
+	font-family: 'Raleway', sans-serif;
 }
 .buyitem .bus{
 	background-color:var(--primary-color);
+	color:#fff;
 }
 .buybutton:hover{
-	opacity:80%;
+	opacity:70%;
 }
 .buyitem .buyadvance{
 	position:absolute;
-	bottom:355px;
+	bottom:360px;
 	left:150px;
 	background-color:var(--primary-color);
 	border:1px solid var(--primary-color);
@@ -882,20 +870,12 @@ color:white;
 }
 .buyadvance p{
 	line-height:30px;
+	color:#fff;
 }
 /*--------------subscribe---------*/
 .faqsection{
 	background-color:var(--bg-color);
-	padding:50px 0px;
-}
-.faqcontent{
-	line-height:70px;	
-	font-family: "Raleway", sans-serif;
-	font-size:20px;
-	margin-bottom:30px;
-}
-.faqcontent p{
-	font-size:18px;
+	padding:60px 0px;
 }
 .faqcontentitem{
     background-color:white;
@@ -922,7 +902,7 @@ color:white;
 .faqcontentitem  i{
 	color:var(--primary-color);
 	font-size:20px;
-	margin-right:8px;
+	padding-right:8px;
 	font-weight:500;
 } 
 .faqicons{
@@ -940,13 +920,8 @@ color:white;
 
 
 /*-------------contact--------*/
-.contectsect{
-	
+.contectsect{	
 	padding:50px 0;
-}
-.contacttitle{
-	line-height:50px;
-	margin-bottom:40px;
 }
 .contactfull{
 	margin:0 150px;
@@ -997,15 +972,12 @@ color:white;
 }	
 .formgroup textarea{
 	 width:100%;
-	 padding:10px 10px;
-	 border-radius: 0;
+     padding:10px 10px;
+    border-radius: 0;
     box-shadow: none;
     font-size: 14px;
-	 margin-top: 24px;
+	margin-top: 24px;
     margin-bottom: -25px;
-}
-.formgroup textarea:hover{
-	border-color:blue;
 }
 .formgroup button{
     background-color:var(--primary-color);
