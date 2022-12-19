@@ -118,7 +118,7 @@
 .commontitle  h2{
 	color:#635551;
 	font-size:35px;
-	margin-bottom:20px;
+	padding-bottom:20px;
 }
 .commontitle  p{
 	font-weight:400;
@@ -911,22 +911,21 @@ color:white;
 } 
 .faqicons i{
 	font-size:18px;
+	color:#000;
 }
 .faqicons{
 	position:absolute;
 	right:40px;
 	bottom:25px;
 }
-.faqcontentitem  .faqicons i{
-	color:#000;
-}
-.faqcontentitem i:hover{
+.faqcontentitem:hover  a
+ {
 	color:var(--primary-color);
 }
-..faqcontentitem a:hover{
+.faqcontentitem:hover  i
+ {
 	color:var(--primary-color);
 }
-
 /*-------------contact--------*/
 .contectsect{	
 	padding:50px 0;
@@ -935,57 +934,48 @@ color:white;
 	margin:0 150px;
 }
 .contactitem{
-	background-color:white;
-	margin-top:10px;
-    padding: 20px 10px;
-    display: flex;
-    justify-content: space-around;
-    box-shadow: 0 0 15px #ccc;
-    margin-bottom: 25px;
-	}
-.contacticon{
-	color: #313030;
-    box-shadow: 0 0 30px white;
+	position:relative;
+	padding:35px 0;
+	padding-left:90px;
+	box-shadow:0 0 5px #ccc;
+	background-color:#fff;
 }
-
-.contacticon i{
-	display: inline-block;
-    font-size: 30px;
-    color: #03a9f4;
-    padding: 10px;
-    border-radius: 50%;
-    border: 1px dotted #03a9f4;
+.contactitem >i{
+	position:absolute;
+	top:28px;
+	left:20px;
+	font-size:32px;
+	color:var(--primary-color);
+	border:dotted 2px var(--primary-color);
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	text-align:center;
+	line-height:45px;
 }
-.contactcont h3{
-	padding-bottom:13px;
-    font-size: 20px;
-    font-family: "Raleway", sans-serif;
-}
-.contactcont p{
-	font-size: 14px;
-    font-family: "Open Sans", sans-serif;
-    line-height: 1.8;
+.contactitem h5{
+	color:#222;
+	font-size:20px;
+	margin-bottom:15px;
 }
 
 .formcontent{
     box-shadow: 0 0 30px #ccc;
     padding:20px;
-	margin-top:10px;
 	width:100%;
-	line-height:90px;
+	margin-top:10px;
 }
 .formgroup input{
     width:100%;
     padding:10px;
+	margin-bottom:20px;
 }	
 .formgroup textarea{
 	 width:100%;
      padding:10px 10px;
-    border-radius: 0;
     box-shadow: none;
     font-size: 14px;
-	margin-top: 24px;
-    margin-bottom: -25px;
+	margin-bottom:20px;
 }
 .formgroup button{
     background-color:var(--primary-color);
@@ -998,6 +988,9 @@ color:white;
 .formgroup button:hover{
 	opacity:80%;
 }
+.formgroup:focus{
+	color:var(--primary-color);
+}
 /*---------------author-----------*/
 .footsect{
 	padding:80px 0;
@@ -1005,30 +998,48 @@ color:white;
 }
 .fontitem{
     font-size:20px;
-	line-height:60px;	
+	line-height:60px;
+	font-family: 'Raleway', sans-serif;
 }
+.fontitem h3{
+	font-weight:500;
+}
+.fontitem p{
+	color:#656262;
+}
+.fontitem strong{
+     font-weight:800;
+}
+
+
 .fontlink{
-	line-height:30px;
+	line-height:40px;
      font-size:15px;	
+}
+.fontlink h3{
+	font-weight:500;
 }
 .fontlink .fonticon  a{
 	text-decoration:none;
-	color:#000;
+	color:#656262;
 }
 .fontlink .fonticon  a:hover{
 	color:var(--primary-color);
 }
 .fontlink .fonticon  i{
 	color:var(--primary-color);
-	padding:10px;
+	padding:5px;
 }
+
+
 .fontnew{
-	line-height:30px;
+	padding:10px;
+	padding-left:20px;
 	font-size:15px;	
 }
 .fontnew h3{
 	font-size: 16px;
-    font-weight: 700;
+    font-weight: 600;
     font-family: "Raleway", sans-serif;
     margin-bottom: 15px;
 }
@@ -1057,8 +1068,8 @@ color:white;
 	position: absolute;
     top: 0;
     right:0;
-    padding: 12px 25px;
-    line-height: 1.4;
+    padding:12px 30px;
+    line-height:1.4;
     border: none;
     background-color:#03a9f4;
     color: #fff;
@@ -1089,10 +1100,9 @@ color:white;
 	margin-right:1px;
 	transition: 0.3s;
 }
- .authoricon .icn {
-}	 
+
 .fontcontent .authoricon i{
-	color:#000;
+	color:#fff;
 }
 .fontcontent a:hover{
 	opacity:70%;
