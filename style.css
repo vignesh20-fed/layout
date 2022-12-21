@@ -97,6 +97,7 @@
 	background-color:#00bcd4;
 	padding:12px 25px;
 	text-align:center;
+	
 	}	
 .text-right{
 	text-align:right !important;
@@ -141,12 +142,12 @@
 	padding:10px 0;
 	
 }
-.contactinfo span > a{
+.contactinfo span  a{
 	color:white;
 	text-decoration:none;
     margin-right:10px;
 }
-.contactinfo span > a:hover{
+.contactinfo span  a:hover{
 	color:#00bcd4;
 	}
 .contactinfo span i{
@@ -205,9 +206,9 @@
 .bannercontent{
 		width:60%;
 }
-.bannercontent > h1{
+.bannercontent  h1{
 	color:#fff;
-	font-size:70px;
+	font-size:60px;
 	font-family: 'Raleway', sans-serif;
 	padding-bottom:15px;
 }
@@ -220,18 +221,21 @@
 .bnr-btn{
 	position:relative;
 	display:inline-block;
-	padding:6px 0 6px 20px;
-
+	padding:6px 0 6px 10px;
 	}
-.bnr-btn a.btn{
+.bnr-btn a{
      border-radius:25px;
 	 background-color:#333333; 
 	 transition:1s;
+	 padding-left:45px;
+	 padding-bottom:12px;
+	 padding-top:12px;
+	 font-weight:400;
 } 	
-.bnr-btn > i{
+.bnr-btn i{
 	position:absolute;
 	top:0px;
-	right:118px;
+	left:0px;
 	background-color:#00bcd4; 
 	height:50px;
 	width:50px;
@@ -446,7 +450,7 @@
 
 .serviceitem{
 	background-color:#fff;
-	margin-top:60px;
+	margin-top:40px;
 	position:relative;
 	padding:45px 20px 30px;
 	box-shadow:0 0 8px #ccc;
@@ -482,7 +486,7 @@
  .serviceitem h3 a{
 	 display:inline-block;
 	 font-size:22px;
-	 margin-bottom:30px;	
+	 margin-bottom:20px;	
      text-decoration:none;
      color:#000;	 
  } 
@@ -500,7 +504,7 @@
    }
 /*----------protofile--------*/
 .protofilecessect{
-	padding:40px 0;
+	padding:60px 0;
 	}
 .protofile{
 	background-position:center;
@@ -525,13 +529,12 @@
 
 .protofileitem{
     background-color:#ffffffbd;
-	
 	border-radius:10px;
 }
 .protofileitem h3{
 	color:#000;
 	text-align:center;
-	line-height:50px;
+	
 }
 .protofileitem p{
 	color:#000;
@@ -608,10 +611,10 @@ color:white;
 }
 /*------------termianl section---------*/
 .terminalsect{
+	padding:70px 0;
 	background-image:linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url("image/testimonials-bg.jpg");
 	background-position:center;
 	background-size:cover;
-	padding:70px 0;
 }
 .terminalitem .img img{
 	width:9%;
@@ -619,23 +622,23 @@ color:white;
 	border:6px solid rgba(255, 255, 255, 0.15);
 }
 .img{
-	line-height:60px;
+	margin-bottom:10px;
 }
 .terminalitem{
     font-family: 'Raleway', sans-serif;
 	text-align:center;
 }
 .terminalitem h2{
-	line-height:10px;
+	margin-bottom:5px;
 	color:white;
 }
 .terminalitem h4{
-	line-height:40px;
+	margin-bottom:15px;
 	color:#ddd;
 	font-weight:500px;
 }
 .terminalitem p{
-	line-height:30px;
+    line-height:30px;
 	font-size:18px;
 	font-style:italic;
 	color:#eee;
@@ -646,7 +649,7 @@ color:white;
 	color:rgba(255, 255, 255, 0.5);
 }
 .terminalitem .icons{
-	line-height:80px;
+	margin-top:40px;
 }
 .icons span{
 	display:inline-block;
@@ -885,7 +888,7 @@ color:white;
 	left:150px;
 	background-color:var(--primary-color);
 	border:1px solid var(--primary-color);
-	height:35px;
+	height:30px;
 	padding:0 40px;
 	transform:rotate(38deg);
 }
@@ -923,7 +926,7 @@ color:white;
 }
 .faqcontentitem  i{
 	color:var(--primary-color);
-	font-size:20px;
+	font-size:22px;
 	padding-right:8px;
 	font-weight:500;
 } 
@@ -1065,24 +1068,24 @@ color:white;
 }
 .form {
     border-radius: 25px;
-   
+    overflow:hidden;
+	padding: 10px 10px;
     position: relative;
+	border:solid 1px var(--primary-color);
 }
 .form input{
-	padding: 14px 18px;
-    width: 70%;
-    font-size: 16px;
-    border-radius: 25px;
-	border-color:#00bcd426;
+	padding: 4px 10px;
+    width:70%;
+    border:0;
 }
 .form button{
 	cursor:pointer;
 	position: absolute;
     top: 0;
     right:0;
-    padding:16px 38px;
-    border: none;
-    background-color:#03a9f4;
+    padding:13px 35px;
+    border:none;
+    background-color:var(--primary-color);
     color: #fff;
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
@@ -1101,7 +1104,7 @@ color:white;
 	color:var(--primary-color);
 }
 .fontcontent .authoricon a{
-	font-size: 20px;
+	font-size: 18px;
     background:var(--primary-color);
     color: #fff;
     border-radius:50%;
@@ -1109,12 +1112,12 @@ color:white;
 	text-align: center;
 	margin-right:1px;
 	transition: 0.3s;
+	 font-family: "Open Sans", sans-serif;
 }
 
 .fontcontent .authoricon i{
 	color:#fff;
 }
 .fontcontent a:hover{
-	opacity:70%;
-	
+	opacity:70%;	
 }
