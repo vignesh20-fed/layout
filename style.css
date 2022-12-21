@@ -550,11 +550,13 @@
 .protofileitem .icon i{
 	margin-left:20px;
 }
+.protofileitem .icon  a{
+	font-size:13px;
+	padding-left:4px;
+}
 .protofile:hover .protofileitem
 {
 	background-color:var(--primary-color);
-	
-
 }
 .protofile:hover .protofileitem p
 {
@@ -759,7 +761,7 @@ color:white;
 }
 .teamitem{
 	margin-top:10px; 
-    border-radius:6px;
+    border-radius:5px;
     overflow:hidden;	
 }
 .teamimg img{
@@ -810,6 +812,7 @@ color:white;
 }	
 .social h3{
 	font-family: 'Raleway', sans-serif;
+	padding-bottom:5px;
 }
 .social p{
     font-size: 13px;
@@ -834,7 +837,7 @@ color:white;
 	background-color:#fff;
 	box-shadow:0 0 5px #ccc;
 	font-family: 'Raleway', sans-serif;
-	padding:6px;
+	padding:5px;
 	font-size:18px;
 }
 .buyitem  h3{
@@ -847,7 +850,6 @@ color:white;
 	color:#bababa;
     font-size: 16px;
     font-weight: 500;
-	
 }
 .buyitem h3 sup{
 	font-size:20px;
@@ -855,9 +857,11 @@ color:white;
 	color:var(--primary-color);
 	font-weight:600;
 }
+.buyitem del{
+	color:#ccc;
+}
 .buyitem p{
-	line-height:40px;
-	
+	line-height:37px;
 }
 .buybutton {
 	margin-top:15px;
@@ -885,7 +889,7 @@ color:white;
 }
 .buyitem .buyadvance{
 	position:absolute;
-	bottom:372px;
+	bottom:360px;
 	left:150px;
 	background-color:var(--primary-color);
 	border:1px solid var(--primary-color);
@@ -912,7 +916,7 @@ color:white;
 	position:relative;
 }
 .faqcontentitem p{
-	font-size:17px;
+	font-size:16px;
 	font-weight:450;
 }
 .faqcontentitem a{
@@ -932,7 +936,7 @@ color:white;
 	font-weight:500;
 } 
 .faqicons i{
-	font-size:18px;
+	font-size:12px;
 	color:#000;
 }
 .faqicons{
@@ -1072,7 +1076,7 @@ color:white;
     overflow:hidden;
 	padding: 10px 10px;
     position: relative;
-	border:solid 1px var(--primary-color);
+	border:solid 1px #00bcd42e;
 }
 .form input{
 	padding: 4px 15px;
