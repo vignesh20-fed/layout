@@ -194,7 +194,7 @@
 
 /*------------banner style-----*/
 .bannersection{
-	padding:230px 0px;
+	padding:250px 0px;
 	height:100%;
 	background-image:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url("image/hero-bg.jpg");
 	background-repeat:no-repeat;
@@ -203,9 +203,7 @@
 	background-attachment:fixed;
 	margin-bottom:-140px;
 }
-.bannercontent{
-		width:60%;
-}
+
 .bannercontent  h1{
 	color:#fff;
 	font-size:60px;
@@ -214,9 +212,10 @@
 }
 .bannercontent p{
 	color:#fff;
-	font-size:22px;
+	font-size:24px;
 	padding-bottom:40px;
 	font-family: 'Raleway', sans-serif;
+	font-weight:500;
 }
 .bnr-btn{
 	position:relative;
@@ -392,6 +391,7 @@
 }	
 .aboutitemstext h4{
 	padding-bottom:13px;
+	font-size:18px;
 }
 .aboutitemstext h4 a{
 	text-decoration:none;
@@ -485,7 +485,7 @@
  }
  .serviceitem h3 a{
 	 display:inline-block;
-	 font-size:22px;
+	 font-size:18px;
 	 margin-bottom:20px;	
      text-decoration:none;
      color:#000;	 
@@ -839,7 +839,7 @@ color:white;
 }
 .buyitem  h3{
 	font-size:40px;
-	font-weight:500;
+	font-weight:600;
 	color:var(--primary-color);
 }
 
@@ -857,6 +857,7 @@ color:white;
 }
 .buyitem p{
 	line-height:40px;
+	
 }
 .buybutton {
 	margin-top:15px;
@@ -1074,7 +1075,7 @@ color:white;
 	border:solid 1px var(--primary-color);
 }
 .form input{
-	padding: 4px 10px;
+	padding: 4px 15px;
     width:70%;
     border:0;
 }
