@@ -114,53 +114,54 @@
 .commontitle{
 	text-align:center;
 	font-family: 'Raleway', sans-serif;
-	margin-bottom:30px;
 }
 .commontitle  h2{
 	color:#635551;
 	font-size:32px;
 	font-weight: 500;
 	font-family: "Poppins", sans-serif;
-	padding-bottom:20px;
 }
 .commontitle  p{
 	font-weight:400;
     font-size:16px;
+	padding:30px 0;
 }				
 	
 /*=========== header style ========*/	
-.headertop{
-	background-color:#fff;
-	}
 .headerinfo{
 	background-color:#39312f;
 	}	
 
 .contactinfo{
-	color:#fff;
-	margin-right:10px;
-	padding:10px 0;
-	
+	 color:white;
+	 font-size:14px;
+	 margin-right:10px;
+	 display:inline-block;
+	 padding:13px 0;
 }
-.contactinfo span  a{
+.contactinfo span > a{
 	color:white;
 	text-decoration:none;
-    margin-right:10px;
+    padding-right:10px;
 }
-.contactinfo span  a:hover{
-	color:#00bcd4;
-	}
 .contactinfo span i{
 	color:#00bcd4;
-	margin-right:5px;
-
+	padding-right:5px;
 }
+.contactinfo span > a:hover{
+	color:#00bcd4;
+	
+	}
 
 .info-btn{
 	background-color:#ff5821;
 	color:white;
 }
 
+
+.navsection{
+	padding:15px 0;	
+}
 .logo{
 	background-color:white;
 	}
@@ -168,21 +169,19 @@
    display:inline-block;
    color:#635551;
    text-decoration:none;
+   font-weight:500;
    }	
-.navsection{
-	padding:20px 0;	
-	
-}
-
 .menubar{
 	display:flex;
 	justify-content:space-between;
+    	
 	}
 .main a{
 	display:block;
 	text-decoration:none;
 	color:black;
-	padding:8px 15px;
+	font-size:15px;
+    padding:10px 0px;
 	}
 .main > a:hover{
 	color:#00bcd4;
@@ -206,7 +205,7 @@
 
 .bannercontent  h1{
 	color:#fff;
-	font-size:60px;
+	font-size:55px;
 	font-family: 'Raleway', sans-serif;
 	padding-bottom:15px;
 }
@@ -243,12 +242,9 @@
 	color:var(--white);
 	border-radius:50%;
 	box-shadow:1px 0 5px  black;
-	
 }
 .bnr-btn a:hover{
 	background-color:#00bcd4;
-	
-
 }
 /*------------whychoose------*/
 .whychoosesect{
@@ -268,10 +264,10 @@
 	font-family: 'Raleway', sans-serif;
 	line-height:36px;
 	font-weight:800;
-	margin-bottom:30px;
+	
 }
 .why-choose p{
-	margin-bottom:30px;
+	padding:30px 0;
     text-align:left;
 	font-size:18px;
 }
@@ -296,7 +292,6 @@
 }
 
 .chooseitem{
-	height:100%;
 	background-color:#fff;
 	border-radius:10px;
 	padding:40px 20px;
@@ -309,8 +304,7 @@
 }
 .chooseitem h4{
 	font-size:20px;
-	margin-bottom:35px;
-	margin-top:35px;
+	padding:35px 0;
 }	
 .chooseitem p{
 	color:#999;
@@ -330,9 +324,7 @@
 	background-repeat:no-repeat;
 	display:flex;
 	justify-content:center;
-	align-items:center;
-	
-    
+	align-items:center; 
 }
 .play-btn{
 	background-color:var(--primary-color);
@@ -351,19 +343,18 @@
 }
 .abt-content h2{
 	color:#999;
-	font-size:18px;
-	margin-bottom:20px;
+	font-size:18px;	
 }
 .abt-content h3{
 	font-size:28px;
-	margin-bottom:20px;
+	padding:20px 0;
 }
 .abt-content p{
 	font-size:17px;
 }
 .aboutitems{
 	display:flex;
-	margin-top:50px;
+	padding-top:50px;
 	align-items:flex-start;
 }
 .aboutitems .abouticons{
@@ -401,6 +392,7 @@
 .aboutitemstext p{
 	line-height: 24px;
     font-size: 14px;
+	color:#000000bd;
 }
 .aboutitemstext h4:hover a{
 	color:var(--primary-color);
@@ -445,7 +437,7 @@
 /*--------servicesection--------*/
 .servicesect{
 	background-color:var(--bg-color);
-	padding:60px 0;
+	padding:80px 0;
 }
 
 .serviceitem{
@@ -486,7 +478,7 @@
  .serviceitem h3 a{
 	 display:inline-block;
 	 font-size:18px;
-	 margin-bottom:20px;	
+	 padding-bottom:20px;	
      text-decoration:none;
      color:#000;	 
  } 
@@ -505,14 +497,15 @@
 /*----------protofile--------*/
 .protofilecessect{
 	padding:60px 0;
-	}
+	}	
 .protofile{
 	background-position:center;
 	background-size:cover;
 	border-radius:2%;
-    margin-bottom: 60px;
-    padding: 20px;
+    padding:20px;
     padding-top: 175px;
+	margin-bottom:30px;
+	transition: all 0.3s ease;
 }
 .protofile1{
 	background-image:url("image/values-1.jpg");
@@ -528,8 +521,9 @@
 }
 
 .protofileitem{
-    background-color:#ffffffbd;
+    background-color:rgba(255, 255, 255, 0.9);
 	border-radius:10px;
+	transition: all 0.3s ease;
 }
 .protofileitem h3{
 	color:#000;
@@ -548,7 +542,7 @@
 	color:#000;
 }
 .protofileitem .icon i{
-	margin-left:20px;
+	padding-left:15px;
 }
 .protofileitem .icon  a{
 	font-size:13px;
@@ -583,11 +577,10 @@ color:white;
  .protofileitem .icon a:hover{
 	text-decoration:underline;
 }
+
 .protofile3:hover .protofileitem
 {
 	background-color:var(--primary-color);
-	
-
 }
 .protofile3:hover .protofileitem p
 {
@@ -597,11 +590,10 @@ color:white;
 {
 color:white;
 }
+
 .protofile4:hover .protofileitem
 {
 	background-color:var(--primary-color);
-	
-
 }
 .protofile4:hover .protofileitem p
 {
@@ -613,10 +605,11 @@ color:white;
 }
 /*------------termianl section---------*/
 .terminalsect{
-	padding:70px 0;
+	padding:80px 0;
 	background-image:linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url("image/testimonials-bg.jpg");
 	background-position:center;
 	background-size:cover;
+	background-repeat:no-repeat;
 }
 .terminalitem .img img{
 	width:9%;
@@ -631,11 +624,11 @@ color:white;
 	text-align:center;
 }
 .terminalitem h2{
-	margin-bottom:5px;
+	padding-bottom:5px;
 	color:white;
 }
 .terminalitem h4{
-	margin-bottom:15px;
+	padding-bottom:15px;
 	color:#ddd;
 	font-weight:500px;
 }
@@ -731,7 +724,7 @@ color:white;
 }
 .pricingicons i{
 	font-size:20px;
-	margin-left:10px;
+	padding-left:10px;
 	padding-top:10px;	
 	font-weight:300;
 }
@@ -745,13 +738,12 @@ color:white;
 	font-weight:600;
 	color:#000;
 	font-size:18px;
-	padding-bottom:10px;
 }
 .pricingheading h6{
 	font-weight:300;
 	color:#000;
 	font-size:18px;
-	padding-bottom:10px;
+	padding:10px 0;
 }
 
 /*---------team------------*/
@@ -779,9 +771,10 @@ color:white;
 	width:100%;
 	background-color:rgba(0,0,255,0.13);
 	text-align:center;
-	padding-top:10px;
-	padding-bottom:10px;
+	padding:10px 0;
 	visibility:hidden;
+	transform:translateY(0px);
+	transition:all 0.3s;
 }
 .instag i{
 	font-size:20px;
@@ -909,9 +902,7 @@ color:white;
 .faqcontentitem{
     background-color:white;
 	box-shadow:0 0 5px #ccc;
-	margin-left:100px;
-	margin-right:100px;
-	margin-top:20px;
+    margin:20px 100px 0;
 	padding:20px;
 	position:relative;
 }
@@ -963,7 +954,7 @@ color:white;
 	position:relative;
 	padding:35px 0;
 	padding-left:90px;
-	box-shadow:0 0 5px #ccc;
+	box-shadow:0 0 30px #ccc;
 	background-color:#fff;
 }
 .contactitem >i{
