@@ -113,7 +113,6 @@
 }	
 .commontitle{
 	text-align:center;
-	font-family: 'Raleway', sans-serif;
 }
 .commontitle  h2{
 	color:#635551;
@@ -124,7 +123,7 @@
 .commontitle  p{
 	font-weight:400;
     font-size:16px;
-	padding:30px 0;
+	padding:25px 0;
 }				
 	
 /*=========== header style ========*/	
@@ -336,6 +335,17 @@
 	line-height:80px;
 	font-size:30px;
 	padding-left:5px;
+	animation-delay:0s;
+  
+  animation: pulsate-btn 2s;
+  
+  animation-direction: forwards;
+  
+  
+  animation-iteration-count: infinite;
+  
+  animation-timing-function: steps;
+  opacity: 1;
 }
 
 .abt-content{
@@ -924,7 +934,6 @@ color:white;
 	color:var(--primary-color);
 	font-size:22px;
 	padding-right:8px;
-	font-weight:500;
 } 
 .faqicons i{
 	font-size:12px;
@@ -948,12 +957,12 @@ color:white;
 	padding:60px 0;
 }
 .contactfull{
-	margin:0 150px;
+	margin:20px 150px;
 }
 .contactitem{
 	position:relative;
 	padding:35px 0;
-	padding-left:90px;
+	padding-left:85px;
 	box-shadow:0 0 30px #ccc;
 	background-color:#fff;
 }
@@ -973,7 +982,7 @@ color:white;
 .contactitem h5{
 	color:#222;
 	font-size:20px;
-	margin-bottom:15px;
+	margin-bottom:10px;
 }
 
 .forms{
@@ -1001,6 +1010,10 @@ color:white;
 	color:#fff;
 	cursor:pointer;
 	font-size:15px;
+	transition:all 0.3s;
+}
+.form-btn:hover{
+	opacity:80%;
 }
 
 /*---------------author-----------*/
@@ -1070,16 +1083,17 @@ color:white;
 	border:solid 1px #00bcd42e;
 }
 .form input{
-	padding: 4px 15px;
+	padding: 6px 15px;
     width:70%;
     border:0;
+	border-radius:5px;
 }
 .form button{
 	cursor:pointer;
 	position: absolute;
     top: 0;
     right:0;
-    padding:13px 35px;
+    padding:15px 35px;
     border:none;
     background-color:var(--primary-color);
     color: #fff;
@@ -1104,7 +1118,7 @@ color:white;
     background:var(--primary-color);
     color: #fff;
     border-radius:50%;
-	padding: 10px 15px;
+	padding: 13px 15px;
 	text-align: center;
 	margin-right:1px;
 	transition: 0.3s;
